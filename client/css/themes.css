@@ -1,0 +1,102 @@
+/* ============================================
+   THEMES — Dark (default) & Light overrides
+   ============================================ */
+
+/* Dark theme is the default defined in design-system.css */
+[data-theme="dark"] {
+  --color-bg-primary: #0A1628;
+  --color-bg-secondary: #111D35;
+  --color-bg-tertiary: #162340;
+  --color-bg-card: rgba(17, 29, 53, 0.7);
+  --color-bg-card-hover: rgba(17, 29, 53, 0.9);
+  --color-bg-input: rgba(17, 29, 53, 0.5);
+  --color-text-primary: #F0F0F0;
+  --color-text-secondary: #A0AEC0;
+  --color-text-muted: #6B7280;
+  --color-text-inverse: #0A1628;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-hover: rgba(255, 255, 255, 0.2);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --gradient-hero: linear-gradient(135deg, #0A1628 0%, #111D35 50%, #162340 100%);
+  --gradient-card: linear-gradient(145deg, rgba(17, 29, 53, 0.8), rgba(10, 22, 40, 0.6));
+  --gradient-glass: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --color-bg-primary: #F5F7FA;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-tertiary: #EDF2F7;
+  --color-bg-card: rgba(255, 255, 255, 0.85);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.95);
+  --color-bg-input: rgba(237, 242, 247, 0.8);
+  --color-bg-overlay: rgba(0, 0, 0, 0.4);
+  --color-text-primary: #1A202C;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #A0AEC0;
+  --color-text-inverse: #F0F0F0;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-hover: rgba(0, 0, 0, 0.2);
+  --color-border-focus: var(--color-primary);
+
+  --color-primary: #0096B7;
+  --color-primary-light: #00B4D8;
+  --color-primary-dark: #007A96;
+  --color-primary-alpha: rgba(0, 150, 183, 0.12);
+
+  --color-accent: #E6A503;
+  --color-accent-light: #FFB703;
+  --color-accent-dark: #CC9200;
+  --color-accent-alpha: rgba(230, 165, 3, 0.12);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 20px rgba(0, 150, 183, 0.2);
+  --shadow-glow-accent: 0 0 20px rgba(230, 165, 3, 0.2);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  --gradient-hero: linear-gradient(135deg, #F5F7FA 0%, #EDF2F7 50%, #E2E8F0 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(247,250,252,0.7));
+  --gradient-glass: linear-gradient(145deg, rgba(255,255,255,0.7), rgba(255,255,255,0.4));
+}
+
+/* Light theme scrollbar */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #EDF2F7;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #CBD5E0;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #A0AEC0;
+}
+
+[data-theme="light"] {
+  scrollbar-color: #CBD5E0 #EDF2F7;
+}
+
+/* Light theme splash */
+[data-theme="light"] .splash-screen {
+  background: var(--gradient-hero);
+}
+
+[data-theme="light"] .splash-logo-text {
+  filter: drop-shadow(0 0 20px rgba(230, 165, 3, 0.3));
+}
+
+[data-theme="light"] .splash-loader {
+  background: #E2E8F0;
+}
+
+/* Light theme selection */
+[data-theme="light"] ::selection {
+  background-color: rgba(0, 150, 183, 0.2);
+  color: var(--color-primary-dark);
+}
